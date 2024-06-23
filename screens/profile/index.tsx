@@ -1,6 +1,5 @@
-import { StatusBar } from 'expo-status-bar';
-import { Image, StyleSheet, Text, View } from 'react-native';
-import { Body, Bold, Button, ButtonText, Description, FollowContainer, ImagesContainer, Navigator, PictureFrame, Rounded, Row } from './styles';
+import { Text } from 'react-native';
+import { Body, Bold, Button, ButtonText, Description, FollowContainer, Image, ImageGrid, ImageRow, ImagesContainer, Navigator, PictureFrame, Rounded, Row, SideImages } from './styles';
 
 export default function Profile() {
   return (
@@ -37,8 +36,28 @@ export default function Profile() {
               </Row>
             </Navigator>
 
-            <ImagesContainer><Text>aaaaaaaaa</Text></ImagesContainer>
           </Body>
+          <ImagesContainer>
+            <ImageGrid>
+              <ImageRow>
+                <Image/>
+                <SideImages>
+                  <Image/>
+                  <Image/>
+                </SideImages>
+              </ImageRow>
+              <ImageRow>
+                <Image/>
+                <Image/>
+                <Image/>
+              </ImageRow>
+              <ImageRow>
+                <Image/>
+                <Image/>
+                <Image/>
+              </ImageRow>
+            </ImageGrid>
+          </ImagesContainer>
         </Rounded>
       </>
   );

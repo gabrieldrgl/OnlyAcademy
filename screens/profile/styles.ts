@@ -63,8 +63,34 @@ export const Navigator = styled.View`
   margin-top: 20px;
 `;
 
-export const ImagesContainer = styled.View`
+export const ImagesContainer = styled.ScrollView`
   background-color: #FFFFFF;
   border-radius: 50px 50px 0 0;
   flex-grow: 1;
+  gap: 10px;
+  border: #FFFFFF 10px;
+`;
+
+export const ImageGrid = styled.View`
+  border-radius: 50px;
+  gap: 10px;
+  overflow: hidden;
+`;
+
+export const ImageRow = styled.View`
+  flex-direction: row;
+  gap: 10px;
+  height: 200px;
+`;
+
+export const Image = styled.View`
+  flex-grow: 1;
+  background-color: #A599CA;
+`;
+
+export const SideImages = styled.View`
+  flex-direction: column;
+  gap: 10px;
+  height: 100%;
+  width: 40%;
 `;
